@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stimuli playback</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans|Noto+Serif+SC:300" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+<link rel="stylesheet" href="dist/css/trackswitch.css" />
+<link rel="stylesheet" href="dist/css/style.css" />
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+<script src="dist/js/trackswitch.js"></script>
+<script type="text/javascript">
+var settings = {
+	onlyradiosolo: true,
+	repeat: true,
+};
+$(".player").trackSwitch(settings);
+    jQuery(document).ready(function() {
+        jQuery(".player").trackSwitch({spacebar: true});
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		jax: ["input/TeX", "output/HTML-CSS"],
+		extensions: ["tex2jax.js"],
+		"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+		tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+		TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+		messageStyle: "none"
+	});
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+
+<body>
+
+	<section class="page-header">
+		<h1 class="project-name"> test page <br> ... </h1>
+		<h2 class="project-tagline">Tim Luebeck, Johannes M. Arend, and Christoph Poerschmann</h2>
+	</section>
+
+	<section class="main-content">
+
+
+		<h2>Abstract</h2>
+		....
+
+		<h2>Contact</h2>
+		<a href="mailto:tim.luebeck@iem.at">Tim Luebeck</a>
+
+		<h2>Audio examples</h2>
+		.......blablabla ....
+
+		<br><br>
+
+		<div class="scene-container">
+			<div class="scene-container-header"> STIMULI 1: drums</div>
+
+			<p>TEST 1</p>
+			<div class="player">
+				<!-- <p style="text-align: center;">3 sources with room</p> -->
+				<ts-track title="test 1" style="background-color: #88AB75;">
+					<ts-source src="stimuli/drums.wav" type="audio/wav"></ts-source>
+				</ts-track>
+				<ts-track title="test 1" style="background-color: rgb(146, 188, 199);">
+					<ts-source src="stimuli/drums.wav" type="audio/wav"></ts-source>
+				</ts-track>
+			</div>
+
+			<p>TEST 2</p>
+			<div class="player">
+				<!-- <p style="text-align: center;">3 sources with room</p> -->
+				<ts-track title="test 2" style="background-color: #88AB75;">
+					<ts-source src="stimuli/drums.wav" type="audio/wav"></ts-source>
+				</ts-track>
+				<ts-track title="test 2" style="background-color: rgb(146, 188, 199);">
+					<ts-source src="stimuli/drums.wav" type="audio/wav"></ts-source>
+				</ts-track>
+			</div>
+
+		</div>
+
+		<br>
+
+		<h2>References</h2>
+    [1] references .....<br>
+		[2] references .....<br>
+		[3] references .....<br>
+
+<br>
+</section>
+<!-- ... -->
+
+</body>
+
+</html>
